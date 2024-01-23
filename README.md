@@ -2,6 +2,8 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
+Module to get information out of the P1 Meter (https://www.homewizard.com/p1-meter/)
+
 ## Using the module
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
