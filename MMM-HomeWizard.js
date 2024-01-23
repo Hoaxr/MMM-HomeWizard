@@ -94,7 +94,7 @@ Module.register("MMM-HomeWizard", {
 		if (this.dataRequest) {
 			var wrapperDataRequest = document.createElement("div");
 			// check format  url
-			wrapperDataRequest.innerHTML = "Current Electricity: " + this.dataRequest.active_power_w + "w<br />Total Electricity: " + this.dataRequest.total_power_import_kwh + "kWh<br />Total Gas: " + this.dataRequest.total_gas_m3 + "m3";
+			wrapperDataRequest.innerHTML = "Current Electricity: " + this.dataRequest.active_power_w + "w<br />Total Electricity: " + Math.round(this.dataRequest.total_power_import_kwh) + "kWh<br />Total Gas: " + Math.round(this.dataRequest.total_gas_m3) + "m3";
 			wrapperDataRequest.className = "xsmall";
 
 			// Label disabled for now
